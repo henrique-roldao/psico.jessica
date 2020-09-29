@@ -1201,34 +1201,19 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-outline-primary {
-  color: #A8DAB5;
-  background-color: transparent;
-  background-image: none;
+  background-color: #A8DAB5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#A8DAB5), to(#00CDAC));
+  background-image: linear-gradient(to right, #A8DAB5, #00CDAC);
+  color: #fff;
   border-color: #A8DAB5;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #A8DAB5;
-  border-color: #A8DAB5;
+  background-color: #2BD3B7;
+  border-color: black;
 }
 
-.btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(150, 213, 178, 0.5);
-  box-shadow: 0 0 0 3px rgba(150, 213, 178, 0.5);
-}
-
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #A8DAB5;
-  background-color: transparent;
-}
-
-.btn-outline-primary:active, .btn-outline-primary.active,
-.show > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #A8DAB5;
-  border-color: #A8DAB5;
-}
 
 .btn-outline-secondary {
   color: #868e96;

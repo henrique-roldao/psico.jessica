@@ -19,7 +19,7 @@ if($nome && $numeroCelular) {
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
 	$mail->Username = 'henriqueroldao.contato@gmail.com';
-	$mail->Password = 'xxxxxx;
+	$mail->Password = 'xxxxxx';
 	$mail->Port = 587;
 	
 	$mail->setFrom('henriqueroldao.contato@gmail.com');
@@ -39,3 +39,5 @@ if($nome && $numeroCelular) {
 } else {
 	echo'Email não enviado!!';
 }
+
+?>

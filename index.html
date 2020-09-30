@@ -37,12 +37,14 @@
             <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Depoimentos</a></li>
           </ul>
           <div class="navbar-text">   
-            <!-- Button trigger modal--><a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary navbar-btn btn-shadow btn-gradient"><i class="fas fa-paper-plane"></i> Enviar Contato</a>
+            <!-- Button trigger modal-->
+            <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary navbar-btn btn-shadow btn-gradient"><i class="fas fa-paper-plane"></i> Enviar Contato</a>
           </div>
         </div>
       </nav>
     </header>
-    <!-- Modal-->
+
+    <!-- Modal - Form Lead -->
     <div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
@@ -51,14 +53,14 @@
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
           </div>
           <div class="modal-body">
-            <form id="signupform" action="#">
+            <form id="signupform" method="POST" action="views/enviar.php">
               <div class="form-group">
-                <label for="fullname">Nome</label>
-                <input type="text" name="fullname" placeholder="Seu nome" id="name">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Seu nome" id="name" required>
               </div>
               <div class="form-group">
-                <label for="username">Celular</label>
-                <input type="number" name="phone" placeholder="51 9 12345678" id="phone">
+                <label for="phone">Celular</label>
+                <input type="number" name="phone" placeholder="51 9 12345678" id="phone" required>
               </div>
               <div class="form-group">
                 <button type="submit" class="submit btn btn-primary btn-shadow btn-gradient" >Enviar</button>
@@ -68,6 +70,8 @@
         </div>
       </div>
     </div>
+
+
     <section id="hero" class="hero hero-home bg-gray">
       <div class="container">
         <div class="row d-flex">

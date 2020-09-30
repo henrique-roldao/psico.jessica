@@ -32,7 +32,7 @@ if($nome && $numeroCelular) {
 					Data/hora: {$data}";
 	
 	if($mail->send()) {
-		header('Location: ./obrigado.html');
+		header('Location: ../views/obrigado.html');
 	} else {
 		echo 'Email nao enviado';
 	}

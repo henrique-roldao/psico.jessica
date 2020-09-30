@@ -19,7 +19,7 @@ if($nome && $numeroCelular) {
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
 	$mail->Username = 'henriqueroldao.contato@gmail.com';
-	$mail->Password = 'Futebol*8';
+	$mail->Password = 'xxxxxx;
 	$mail->Port = 587;
 	
 	$mail->setFrom('henriqueroldao.contato@gmail.com');
